@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A49460932840C984000491EE /* WebviewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49460922840C984000491EE /* WebviewManager.swift */; };
+		A49460952840CC46000491EE /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49460942840CC46000491EE /* PopupViewController.swift */; };
+		A49460972840D3E4000491EE /* WebPresentTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49460962840D3E4000491EE /* WebPresentTransition.swift */; };
 		A4E4F096283CE6EB00AE337A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E4F095283CE6EB00AE337A /* AppDelegate.swift */; };
 		A4E4F098283CE6EB00AE337A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E4F097283CE6EB00AE337A /* SceneDelegate.swift */; };
 		A4E4F09A283CE6EB00AE337A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E4F099283CE6EB00AE337A /* ViewController.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A49460922840C984000491EE /* WebviewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebviewManager.swift; sourceTree = "<group>"; };
+		A49460942840CC46000491EE /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
+		A49460962840D3E4000491EE /* WebPresentTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebPresentTransition.swift; sourceTree = "<group>"; };
 		A4E4F092283CE6EB00AE337A /* WebviewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebviewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4E4F095283CE6EB00AE337A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4E4F097283CE6EB00AE337A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,12 +63,15 @@
 			isa = PBXGroup;
 			children = (
 				A4E4F095283CE6EB00AE337A /* AppDelegate.swift */,
+				A49460922840C984000491EE /* WebviewManager.swift */,
 				A4E4F097283CE6EB00AE337A /* SceneDelegate.swift */,
 				A4E4F099283CE6EB00AE337A /* ViewController.swift */,
 				A4E4F09B283CE6EB00AE337A /* Main.storyboard */,
 				A4E4F09E283CE6ED00AE337A /* Assets.xcassets */,
 				A4E4F0A0283CE6ED00AE337A /* LaunchScreen.storyboard */,
 				A4E4F0A3283CE6ED00AE337A /* Info.plist */,
+				A49460942840CC46000491EE /* PopupViewController.swift */,
+				A49460962840D3E4000491EE /* WebPresentTransition.swift */,
 			);
 			path = WebviewExample;
 			sourceTree = "<group>";
@@ -103,7 +112,7 @@
 				};
 			};
 			buildConfigurationList = A4E4F08D283CE6EB00AE337A /* Build configuration list for PBXProject "WebviewExample" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -138,9 +147,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A49460952840CC46000491EE /* PopupViewController.swift in Sources */,
+				A49460972840D3E4000491EE /* WebPresentTransition.swift in Sources */,
 				A4E4F09A283CE6EB00AE337A /* ViewController.swift in Sources */,
 				A4E4F096283CE6EB00AE337A /* AppDelegate.swift in Sources */,
 				A4E4F098283CE6EB00AE337A /* SceneDelegate.swift in Sources */,
+				A49460932840C984000491EE /* WebviewManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +301,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = GCAT449K7M;
+				DEVELOPMENT_TEAM = DJ94Y9HT46;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WebviewExample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -297,6 +309,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -317,7 +330,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = GCAT449K7M;
+				DEVELOPMENT_TEAM = DJ94Y9HT46;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WebviewExample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -325,6 +338,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

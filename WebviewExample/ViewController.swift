@@ -6,14 +6,14 @@
 //
 
 import UIKit
+import WebKit
 
 class ViewController: UIViewController {
-
+    
+    let webManager = WebviewManager.shared
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        webManager.setupWebview()
     }
-
-
 }
-
